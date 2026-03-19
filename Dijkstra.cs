@@ -3,17 +3,12 @@ public class Dijkstra
         private int PrioritiesOfOperator(string operators)
         {
             if (operators == "+" || operators == "-")
-        {
             return 1;
-        }
             if (operators == "/" || operators == "*")
-        {
             return 2;
-        }
             if (operators == "^")
-        {
             return 3;
-        }
+            
             return 0;
         }
         public Queue Change(Queue input)
